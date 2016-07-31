@@ -12,7 +12,41 @@
 		7F3484DE1D32E2C3003E837B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3484DC1D32E2C3003E837B /* Main.storyboard */; };
 		7F3484E01D32E2C3003E837B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3484DF1D32E2C3003E837B /* Assets.xcassets */; };
 		7F3484E31D32E2C3003E837B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3484E11D32E2C3003E837B /* LaunchScreen.storyboard */; };
+		7F34850E1D32E3A7003E837B /* Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34850D1D32E3A7003E837B /* Collision.swift */; };
+		7F34850F1D32E431003E837B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3485071D32E372003E837B /* Common.framework */; };
+		7F3485101D32E431003E837B /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3485071D32E372003E837B /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F3485061D32E372003E837B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F3485021D32E372003E837B /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F3484F51D32E306003E837B;
+			remoteInfo = Common;
+		};
+		7F3485111D32E431003E837B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F3485021D32E372003E837B /* Common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F3484F41D32E306003E837B;
+			remoteInfo = Common;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F3485131D32E431003E837B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F3485101D32E431003E837B /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7F3484D51D32E2C3003E837B /* NamespaceCollision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamespaceCollision.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +56,8 @@
 		7F3484DF1D32E2C3003E837B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3484E21D32E2C3003E837B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F3484E41D32E2C3003E837B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F3485021D32E372003E837B /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
+		7F34850D1D32E3A7003E837B /* Collision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collision.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F34850F1D32E431003E837B /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +75,8 @@
 		7F3484CC1D32E2C2003E837B = {
 			isa = PBXGroup;
 			children = (
+				7F3485021D32E372003E837B /* Common.xcodeproj */,
+				7F3484EA1D32E2D7003E837B /* New Group */,
 				7F3484D71D32E2C3003E837B /* NamespaceCollision */,
 				7F3484D61D32E2C3003E837B /* Products */,
 			);
@@ -55,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				7F3484D81D32E2C3003E837B /* AppDelegate.swift */,
+				7F34850D1D32E3A7003E837B /* Collision.swift */,
 				7F3484DA1D32E2C3003E837B /* ViewController.swift */,
 				7F3484DC1D32E2C3003E837B /* Main.storyboard */,
 				7F3484DF1D32E2C3003E837B /* Assets.xcassets */,
@@ -62,6 +102,21 @@
 				7F3484E41D32E2C3003E837B /* Info.plist */,
 			);
 			path = NamespaceCollision;
+			sourceTree = "<group>";
+		};
+		7F3484EA1D32E2D7003E837B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		7F3485031D32E372003E837B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F3485071D32E372003E837B /* Common.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +129,12 @@
 				7F3484D11D32E2C3003E837B /* Sources */,
 				7F3484D21D32E2C3003E837B /* Frameworks */,
 				7F3484D31D32E2C3003E837B /* Resources */,
+				7F3485131D32E431003E837B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7F3485121D32E431003E837B /* PBXTargetDependency */,
 			);
 			name = NamespaceCollision;
 			productName = NamespaceCollision;
@@ -111,12 +168,28 @@
 			mainGroup = 7F3484CC1D32E2C2003E837B;
 			productRefGroup = 7F3484D61D32E2C3003E837B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7F3485031D32E372003E837B /* Products */;
+					ProjectRef = 7F3485021D32E372003E837B /* Common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7F3484D41D32E2C3003E837B /* NamespaceCollision */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7F3485071D32E372003E837B /* Common.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Common.framework;
+			remoteRef = 7F3485061D32E372003E837B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7F3484D31D32E2C3003E837B /* Resources */ = {
@@ -137,11 +210,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F3484DB1D32E2C3003E837B /* ViewController.swift in Sources */,
+				7F34850E1D32E3A7003E837B /* Collision.swift in Sources */,
 				7F3484D91D32E2C3003E837B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F3485121D32E431003E837B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Common;
+			targetProxy = 7F3485111D32E431003E837B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7F3484DC1D32E2C3003E837B /* Main.storyboard */ = {
@@ -255,6 +337,7 @@
 		7F3484E81D32E2C3003E837B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NamespaceCollision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -267,6 +350,7 @@
 		7F3484E91D32E2C3003E837B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NamespaceCollision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -295,6 +379,7 @@
 				7F3484E91D32E2C3003E837B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

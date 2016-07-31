@@ -7,12 +7,29 @@
 //
 
 import UIKit
+import Common
 
 class ViewController: UIViewController {
+	
+	var commonCollision: Common.Collision!
+	var localCollision: NamespaceCollision.Collision!
 
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		print(Collision.name) // No ambiguity warning
+		print(Common.Collision.name)
+		print(NamespaceCollision.Collision.name)
+		NamespaceCollision.ViewController.funky(self)()
+		
+		localCollision = Collision()
+
+		commonCollision = Common.Collision(last: "hi")
+		
+		print(commonCollision, localCollision)
+		
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -20,6 +37,8 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-
+	func funky() {
+		print("Wacky")
+	}
 }
 
